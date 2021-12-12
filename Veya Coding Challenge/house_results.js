@@ -37,7 +37,6 @@ function getHouseResults(houseJson) {
   const houseDataByAreaArray = Object.values(houseDataByAreaObj);
 
   // Shaping the data into an Array of Area Objects
-
   const avgPriceByAreaArray = houseDataByAreaArray.map((properties) => {
     const num_of_properties = properties.length;
     const avg_price =
