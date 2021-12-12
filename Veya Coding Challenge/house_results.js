@@ -55,11 +55,17 @@ function getHouseResults(houseJson) {
 
   return {
     mostExpensiveHouses,
-    //  Array of Objects with NumOfResults argument
+    //  Function with NumOfResults argument which returns an Array of Objects
     cheapestHouses,
-    //  Array of Objects with NumOfResults argument
+    //  Function with NumOfResults argument which returns an Array of Objects
     mostExpensiveArea,
-    //  Object
+    //  Object e.g:
+    //   {
+    //   area: 'CR4',
+    //   avg_price: 6674325,
+    //   num_of_properties: 1,
+    //   properties: [ [Object] ]
+    // },
     houseData,
     //  raw packaged data in Array
     houseDataByAreaObj,
@@ -67,14 +73,17 @@ function getHouseResults(houseJson) {
     houseDataByAreaArray,
     //  Nested array, grouped by Area code
     avgPriceByAreaArray,
-    // Array of Area Objects e.g:
-    //   ,{
-    //     area: 'TA7',
-    //     avg_price: 232617,
-    //     num_of_properties: 1,
-    //     properties: [ [Object] ]
-    //   },
+    //  Array of Area Objects
   };
 }
 
 console.log(getHouseResults(house_json));
+
+/*
+Questions
+
+	•	If this application were to become a business-critical application, what do you think you would need to improve / focus on next?
+	•	What other “interesting” things do you think you could do with this data?
+*/
+
+console.log(/[a-z]{1}|[A-Z]{1}/.test("ab"));
