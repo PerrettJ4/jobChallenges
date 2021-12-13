@@ -1,5 +1,35 @@
 Questions
 
-	•	If this application were to become a business-critical application, what do you think you would need to improve / focus on next?
-	•	What other “interesting” things do you think you could do with this data?
+•	If this application were to become a business-critical application, what do you think you would need to improve / focus on next?
+
+1. First, I would focus on creating unit tests on all functions, to double check the logic used & for maintainability.
+
+2. I would then export the function getHouseResults for re-usability.
+
+3. I would try Interface the CSV to JSON converter and House_Results files to cut time losses in the event of repeated use. 
+
+4. The output is lengthy and well... in node. Some UI & formatting to display the information in a much more digestible manner would be nice. Even a simple table which can be filtered, sorted and searched.
+
+5. Again it's quite difficult to analyse the results. The implementation of Line/Bar graphs, Bubble graphs (Area) or even a UK price-based Heat map would help humans spot trends and outliers. 
+
+6. In regard to most expensive/cheapest lists - I would implement a slider to limit the number of results.
+
+7. More data! Number of bedrooms, land sqft, Property age, Property type etc.. will all influence sold price greatly. With this data we will be able to interrogate the sold price by area in more depth. It may be possible to develop some simple heuristics to identify these trends or anomalies for us.
+
+
+
+•	What other “interesting” things do you think you could do with this data?
+
+1. Theres a lot of talk about AI systems, and I would need a lot of time and a LOT more data. However, a supervised machine learning method to predict house prices based on dependant and independent variables is definitely feasible. These variables such as local population demographic, weather, local crime, property crime, selling history, planning permission, planning history, Transport Networks and so on can be accessed with the current data. With this amount of data a Neural Net would be the likely choice of supervised system, which I would code in Python .
+
+2. As stated before I believe with the Postcode data I can access a vast pool of more data. Brief research online shows property APIs with comprehensive data - some at a great cost. However, there are methods of accessing some of this data for free. ie. Crime stats by lat,long are available for free at https://data.police.uk, and I know an API which can locate all sports facilities by distance using lat & long, for free. 
+
+3. Using Lat and Long info and CSS grid I could map out price as a heat map. Mapping each colour keyed Postcode Area to a lat, long co-ordinate.
+
+4. Using libraries I could Graph properties/areas sold price history to see price growth by Area. This may illustrate urbanisation. Again a heat map of price growth would be cool. Perhaps a dynamic animation over time as well, this could be done using CSS keyframes.
+
+5. I can deploy a React app for desktop or mobile which lists all 50 houses as tiles (with images), we can search, filter and sort these tiles by any variable. Clicking on a tile would then show greater information out that house. One idea show direct comparisons between houses or areas. Something which is not currently presented in the current data.
+
+6. I can create a fully restful API with our packaged data by populating tables in Postgres or Heroku or Serverless, I can then query this data using SQL. 
+
 

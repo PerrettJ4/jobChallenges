@@ -78,12 +78,3 @@ function getHouseResults(houseJson) {
 }
 
 console.log(getHouseResults(house_json));
-
-/*
-Questions
-
-	•	If this application were to become a business-critical application, what do you think you would need to improve / focus on next?
-	•	What other “interesting” things do you think you could do with this data?
-*/
-
-console.log(/[a-z]{1}|[A-Z]{1}/.test("ab"));
